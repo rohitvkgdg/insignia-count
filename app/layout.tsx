@@ -9,9 +9,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Insignia'25 - Where Mirage Becomes Reality",
+  title: "Insignia'25 - A festival of Art, Cult & Innovation",
   description: "An immersive celebration of art, culture, and innovation at the crossroads of tradition and modernity.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
