@@ -11,6 +11,11 @@ const inter = Inter({
 export const metadata = {
   title: "Insignia'25 - A festival of Art, Cult & Innovation",
   description: "An immersive celebration of art, culture, and innovation at the crossroads of tradition and modernity.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 }
 
 export default function RootLayout({
@@ -29,6 +34,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
