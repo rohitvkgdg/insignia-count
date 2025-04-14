@@ -1,16 +1,14 @@
 module.exports = {
   apps: [{
     name: "insignia-count",
-    script: "bunx",
-    args: "serve dist -l 5173",
+    script: "node_modules/next/dist/bin/next",
+    args: "start",
     instances: 1,
     autorestart: true,
     watch: false,
     max_memory_restart: '200M',
     env: {
-      PM2_SERVE_PATH: "./.next",
-      PM2_SERVE_PORT: 5173,
-      PM2_SERVE_SPA: "true",
+      PORT: 5173,
       NODE_ENV: "production"
     },
     log_date_format: "YYYY-MM-DD HH:mm:ss",
