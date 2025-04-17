@@ -102,20 +102,6 @@ export default function Home() {
             }}
           />
 
-          {/* Animated camels */}
-          <motion.div
-            className="absolute bottom-[10vh] left-[10%] h-20 w-32"
-            initial={{ x: -100 }}
-            animate={{ x: width ? width + 100 : 0 }}
-            transition={{
-              duration: 60,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }}
-          >
-            <Image src="/camel-caravan.svg" alt="" fill className="object-contain" />
-          </motion.div>
-
           <motion.div
             className="absolute bottom-[12vh] left-[30%] h-16 w-24"
             initial={{ x: -100 }}
@@ -189,7 +175,7 @@ export default function Home() {
               <div className="flex items-center">
                 <Image src={"/logo.png"} alt="" width={50} height={50} className="h-12 w-12" />
               </div>
-
+              <p className="text-center font-semibold text-md mr-[20%] items-center"> SHRI DHARMASTHALA MANJUNATHESHWARA COLLEGE OF ENGINEERING & TECHNOLOGY, DHARWAD </p>
             </div>
           </motion.header>
 
@@ -201,7 +187,7 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <motion.h1
-                className="font-inter py-4 text-5xl font-bold text-transparent md:text-8xl"
+                className="font-inter py-4 text-5xl font-bold text-transparent md:text-9xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -210,12 +196,12 @@ export default function Home() {
                 }}
                 style={{
                   backgroundImage:
-                    "linear-gradient(45deg, #D4AF37 0%, #FFDF00 25%, #D4AF37 50%, #B8860B 75%, #D4AF37 100%)",
+                    "linear-gradient(45deg, #7f751e 0%, #FDFF00 25%, #7f751e 50%, #B8860B 75%, #D4AF37 100%)",
                   backgroundSize: "200% auto",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
-                  animation: "shimmer 8s ease-in-out infinite",
-                  textShadow: "0 0 20px rgba(212,175,55,0.3)",
+                  animation: "shimmer 6s ease-in-out infinite",
+                  textShadow: "0 0 30px rgba(212,175,55,0.3)",
                 }}
               >
                 INSIGNIA'25
@@ -241,7 +227,7 @@ export default function Home() {
                 transition={{ duration: 1 }}
               >
                 <BlurText
-                  text="A Festival of Art, Culture, and Innovation"
+                  text="A National level Techno-cultural Fest"
                   delay={50}
                   animateBy="words"
                   direction="bottom"
@@ -257,11 +243,11 @@ export default function Home() {
               >
                 <div className="mt-4 text-center w-full">
                   <motion.div
-                    className="inline-block rounded-full bg-gradient-to-r from-gold/20 to-gold/5 px-4 py-2 text-sm text-gold"
+                    className="inline-block rounded-full bg-gradient-to-r from-gold/20 to-gold/5 px-4 py-2 text-md font-bold text-gold"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                   >
-                    <Calendar className="inline-block mr-1 w-4" />
+                    <Calendar className="inline-block mr-2 w-4 mb-1" />
                     <span className="font-inter">May 16 - May 17, 2025</span>
                   </motion.div>
                 </div>
@@ -275,17 +261,6 @@ export default function Home() {
               >
                 <ModernCountdown targetDate={festDate} />
               </motion.div>
-              <div className="mt-8 text-center">
-                <motion.div
-                  className="inline-block rounded-full bg-gradient-to-r from-gold/20 to-gold/5 px-4 py-2 text-sm text-gold"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.8 }}
-                >
-                  <MapPin className="inline-block mr-2 w-4" />
-                  <span className="font-inter">SDM College of Engineering & Technology, Dharwad</span>
-                </motion.div>
-              </div>
             </motion.div>
           </section>
 
@@ -366,7 +341,7 @@ export default function Home() {
                   <h4 className="font-inter text-2xl text-gold">Contact</h4>
                   <ul className="mt-4 text-sm space-y-2">
                     <li className="text-sand/70">Email: insigniaofficial@gmail.com</li>
-                    <li className="text-sand/70">Phone: +91 98765 43210</li>
+                    <li className="text-sand/70">Phone: 0836-244 7465</li>
                     <li className="text-sand/70">Address: SDM College of Engineering & Technology, Dhavalageri, Dharwad</li>
                   </ul>
                 </div>
