@@ -175,7 +175,7 @@ export default function Home() {
               <div className="flex items-center">
                 <Image src={"/logo.png"} alt="" width={50} height={50} className="h-12 w-12" />
               </div>
-              <p className="text-center font-semibold text-md mr-[20%] items-center"> SHRI DHARMASTHALA MANJUNATHESHWARA COLLEGE OF ENGINEERING & TECHNOLOGY, DHARWAD </p>
+              <p className="text-center font-semibold text-[10px] md:text-base mr-[5%] md:mr-[20%] items-center"> SHRI DHARMASTHALA MANJUNATHESHWARA COLLEGE OF ENGINEERING & TECHNOLOGY, DHARWAD </p>
             </div>
           </motion.header>
 
