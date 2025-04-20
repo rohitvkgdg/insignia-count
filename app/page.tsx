@@ -12,6 +12,7 @@ import { ModernCountdown } from "@/components/modern-countdown"
 import { useWindowSize } from "@/hooks/use-window-size"
 import ScrollFloat from "@/components/ui/ScrollFloat/ScrollFloat"
 import CircularGallery from "@/components/ui/CircularGallery/CircularGallery"
+import Link from "next/link"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -361,7 +362,7 @@ export default function Home() {
               </div>
 
               <div className="mt-12 flex flex-col items-center justify-between border-t border-gold/20 pt-8 md:flex-row">
-                <p className="text-sm text-sand/50">© {new Date().getFullYear()} Insignia. All rights reserved.</p>
+                <p className="text-sm text-sand">© {new Date().getFullYear()} Insignia. All rights reserved. <Link href={"https://sdmcetinsignia.com/privacy-policy"} className="font-semibold underline">Privacy Policy</Link></p>
 
                 <div className="mt-4 flex space-x-4 md:mt-0">
                   <motion.a
